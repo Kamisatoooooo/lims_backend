@@ -1,0 +1,14 @@
+server:
+  port: 8888
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/lims
+    username: root
+    password: du19281184
+  application:
+    name: product-service
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: com/lims/mapper/xml/*.xml
